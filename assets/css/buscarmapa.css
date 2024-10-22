@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+
+/* início do header */
+
+body{
+    min-height: 100vh;
+    width: 100%;
+}
+
+nav {
+    background-color: #EEEE;
+    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.1);
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 80px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+nav a:hover {
+    cursor: pointer;
+    background-color: #f0f0f0;
+    transition-duration: 300ms;
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: white;
+    backdrop-filter: blur(10px) ;
+    box-shadow: -10px 0 10px rgb(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;  
+}
+
+.menu-botton {
+    display: none;
+}
+
+@media(max-width: 800px) {
+   .hideOnMobile{
+    display: none;
+   } 
+   .menu-botton{
+    display: block;
+   }
+}
+
+@media(max-width: 400px) {
+    .sidebar{
+        width: 100%;
+    }
+}
+
+/* fim do header */
+
+
+.Buscarpontosdecoleta{
+    display: inline-block
+}
+
+.Buscarpontosdecoleta{
+    margin-left: 290px;
+    margin-top: 50px;
+}
+.Buscarpontosdecoleta p{
+    width: 295px;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.Buscarpontosdecoleta a{
+
+    text-decoration: none;
+    
+}
+
+
+.campo-buscar{
+   margin-top:-210px;
+   margin-left: 380px;
+   display: flex;
+}
+
+#Buscar{
+    width: 190px;
+    text-align: center;
+    color: black;
+
+}
+
+#cep{
+    background-color: #067654;
+    border-radius: 0px 5px 5px 0px;
+    height: 50px;
+    width: 80px;
+}
+ 
+#lupa{
+    width: 40px;
+    margin-top: 3px;
+    align-items: center;
+}
+.campo-distancia{
+    display: inline-flex;
+    margin-top: 20px;
+    margin-left: 380px;
+   
+}
+
+#select{
+    width: 190px;
+    height: 50px;
+    text-align: center;
+  
+
+}
+
+#local{
+    width: 80px;
+    background-color: #067654;
+    border-radius: 0px 5px 5px 0px;
+}
+
+#localizacao{
+    width: 60px;
+    height: 40px;
+}
+
+#botaoBuscar{
+    margin-left: 380px;
+    margin-top: 10px;
+    width: 275px;
+    height: 50px;
+    color: white;
+    background-color: #067654;
+    border-radius: 5px;
+    cursor: pointer;    
+}
+#botaoBuscar:hover{
+    background-color: #326858;
+}
+
+
+/* * início do footer */ 
+
+
+footer {
+
+    background-color: #EEEE;
+    color: black;
+    padding: 20px;
+    margin-top: 130px;
+    text-align: center;
+}
+
+#footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer-section {
+    flex-basis: calc(20% - 20px);
+    text-align: center;
+}
+
+.footer-section a {
+    color: black; 
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.footer-section div {
+    margin-top: 10px;
+}
+
+.footer-section h4 {
+    margin-bottom: 5px;
+}
+
+.footer-section p {
+    margin: 0;
+}
+
+#footer-social-media {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#footer-social-media a {
+    color: black; 
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    #footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-section {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    #footer-social-media {
+        justify-content: center;
+    }
+}
+/* 
+fim do footer */

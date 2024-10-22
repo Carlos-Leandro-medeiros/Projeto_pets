@@ -1,0 +1,402 @@
+/* Estilos básicos para o layout */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+nav {
+    background-color: #eeee;
+    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.1);
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 80px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+nav a:hover {
+    cursor: pointer;
+    background-color: #f0f0f0;
+    transition-duration: 300ms;
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: white;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+.menu-botton {
+    display: none;
+}
+
+@media(max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+    .menu-botton {
+        display: block;
+    }
+}
+
+@media(max-width: 400px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+
+#Logo {
+    height: 60px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.container {
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 25px;
+    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #ffffff;
+    border-radius: 8px;
+}
+
+.container h1 {
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+}
+
+#registration-form {
+    margin-top: 30px;
+}
+
+#input-box-user {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input-box-user input {
+    position: relative;
+    height: 40px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+.input-box-user input:focus {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) ;
+}
+
+.column {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.column .input-box-user {
+    flex: 0 0 48%;
+}
+
+.gender-box {
+    margin-top: 20px;
+}
+
+.gender-box h3 {
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+#registration-form :where(.gender-option, .gender) {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+
+#registration-form .gender {
+    column-gap: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.gender input {
+    accent-color: #33cc33;;
+}
+
+#registration-form :where(.gender input, .gender label) {
+    cursor: pointer;
+}
+
+#registration-form button {
+    height: 55px;
+    width: 100%;
+    background: #e1c0bd;
+    color: #000000;
+    font-family:Arial, Helvetica, sans-serif;
+    border-color: rgba(0, 0, 0, 0.379);
+    padding: 7px;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    box-shadow: inset 5px 5px 8px #af6a65, inset -5px -5px 8px #af6a65;
+}
+
+#registration-form p {
+    text-align: center;
+    font-size: 16px;
+}
+
+#link-login {
+    text-decoration: none;
+    transition: all .3s ease-out;
+}
+
+#link-login:hover {
+    color: #33ccff;
+}
+
+.toggle-buttons {
+    display: flex;
+}
+
+.toggle-buttons .button {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.toggle-buttons input[type="radio"] {
+    display: none;
+}
+
+.toggle-buttons input[type="radio"]:checked + .button {
+    background-color: #024430; 
+    color: white;
+    border-color: #024430;
+}
+
+@media screen and (max-width: 500px){
+    #registration-form .column {
+        flex-wrap: wrap;
+    }
+    #registration-form :where(.gender-option, .gender) {
+        row-gap: 15px;
+    }
+}
+
+
+footer {
+    background-color: #f1f3f5;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+}
+
+#footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer-section {
+    flex-basis: calc(20% - 20px);
+    text-align: center;
+}
+
+.footer-section a {
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.footer-section div {
+    margin-top: 10px;
+}
+
+.footer-section h4 {
+    margin-bottom: 5px;
+}
+
+.footer-section p {
+    margin: 0;
+}
+
+#footer-social-media {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#footer-social-media a {
+    color: black;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .image-container, .container {
+        width: 100%;
+        max-width: 100%;
+    }
+    #footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-section {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    #footer-social-media {
+        justify-content: center;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.register-form {
+    max-width: 400px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="file"],
+button,
+input[type="radio"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #024430;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #026649;
+}
+
+#preview {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Estilos específicos para radios */
+input[type="radio"] {
+    margin-right: 5px;
+}
+

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="icon" href="./assets/image/Mundo Reciclavel (1).png" id="Imagem-guia">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Mapa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/buscarmapa.css">
+</head>
+<body>
+    <header>
+    <nav class="menu-navegacao">
+      <ul class="sidebar">
+        <li onclick=hideSiderbar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px"
+              viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+              </svg></a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="sobre-nos.html">Sobre nós</a></li>
+              <li><a href="assets/buscarPontos/frontend/encontrarPontos.html">Pontos</a></li>
+              <li><a href="educacao.html">Educação</a></li>
+              <li><a href="login.html">Login</a></li>
+            </ul>
+            <ul>
+              <li><img id="Logo" style="height: 80px" src="assets/image/Mundo Reciclavel (1).png" alt=""></li>
+              <li class="hideOnMobile"><a href="index.html">Home</a></li>
+              <li class="hideOnMobile"><a href="sobre-nos.html">Sobre nós</a></li>
+              <li class="hideOnMobile"><a href="assets/buscarPontos/frontend/encontrarPontos.html">Pontos</a></li>
+              <li class="hideOnMobile"><a href="educacao.html">Educação</a></li>
+              <li class="hideOnMobile"><a href="login.html">Login</a></li>
+              <li class="menu-botton" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px"
+                    viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                  </svg></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+  <div class="Buscarpontosdecoleta">
+    <h1>Quer Descartar?</h1>
+    <p>Digite seu CEP, o selecione o tipo de descarte,escolha o serviço desejado: catador ou ponto de coleta e selecione o tamanho do seu lixo para preparar quem vai recebê-lo.😉</p>
+    <br>
+    <a id="link" href="#">Como separar o lixo para descarte</a>
+
+      <div class="campo-buscar">
+        <input type="text" name="Buscar" id="Buscar" step="0.01" min="0.1" max="10" placeholder="Insira o CEP"><button id="cep"><img id="lupa" src="./assets/image/Group.svg" alt="desenho de uma lupa">
+        </button>
+        
+      </div>
+        <div class="campo-distancia">
+      
+        <select id="select"  name="Tamanho">
+          <option value="valor3">Pequeno</option>
+          <option value="valor2">Médio</option>
+          <option value="valor4">Grande</option>
+          <img src="./assets/image/Trash Can - iconSvg.co.png" alt="">
+          <button id="local"><img id="localizacao" src="./assets/image/Clip path group.svg" alt="ícone de localização">
+
+        </div> 
+      </div>  
+
+        <div class="Tamanho">
+          <select id="select"  name="Tamanho">
+            <option value="valor3"></option>
+            <option value="valor2"></option>
+            <option value="valor4"></option>
+
+            <button id="local"><img id="localizacao" src="./assets/image/Trash Can - iconSvg.co.svg" alt="ícone de localização">
+            </div>
+      </div> 
+</main>
+
+<footer>
+  <div id="footer-content">
+    <div class="footer-section">
+      <a href="#"><i class="fa-solid fa-globe"></i></a>
+      <div>
+        <h4>Mundo Reciclável</h4>
+        <div id="footer-social-media">
+          <a href="https://www.facebook.com/mundoreciclavel2024/" class="footer-link" id="facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.youtube.com/channel/UCAPMJQg38GDgpSn-FcNyE7Q" class="footer-link" id="youtube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.instagram.com/mundoreciclavel2024/" class="footer-link" id="instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-section">
+      <a href="#"><i class="fa-solid fa-map-location-dot"></i></a>
+      <div>
+        <h4>Endereço</h4>
+        <p>CEP: 04266-060 Rua Ipiranga, São Paulo-SP</p>
+      </div>
+    </div>
+    <div class="footer-section">
+      <a href="#"><i class="fa-solid fa-envelope"></i></a>
+      <div>
+        <h4>E-mail</h4>
+        <p>mundoreciclavel2024@gmail.com</p>
+      </div>
+    </div>
+    <div class="footer-section">
+      <a href="#"><i class="fa-solid fa-phone"></i></a>
+      <div>
+        <h4>Telefone</h4>
+        <p>(11) 4002-8922</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

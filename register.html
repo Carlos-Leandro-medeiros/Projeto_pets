@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <link rel="icon" href="Logotipo_Monograma_Nail_Designer_Rosê_e_Preto_1-removebg-preview.png" id="Imagem-guia">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/cadastro.css">
+    <title>Cadastro - Mundo Reciclável</title>
+</head>
+<body>  
+
+    <header>
+        <nav class="menu-navegacao">
+            <ul class="sidebar">
+                <li onclick=hideSiderbar()><a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="24px"
+                            fill="#e8eaed">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre-nos.html">Sobre nós</a></li>
+                <li><a href="assets/buscarPontos/frontend/encontrarPontos.html">Pontos</a></li>
+                <li><a href="educacao.html">Educação</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+            <ul>
+                <li><img id="Logo" style="height: 80px" src="Logotipo_Monograma_Nail_Designer_Rosê_e_Preto_1-removebg-preview.png" alt="logo"></li>
+                <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                <li class="hideOnMobile"><a href="sobre-nos.html">Sobre nós</a></li>
+                <li class="hideOnMobile"><a href="assets/buscarPontos/frontend/encontrarPontos.html">Pontos</a></li>
+                <li class="hideOnMobile"><a href="educacao.html">Educação</a></li>
+                <li class="hideOnMobile"><a href="login.html">Login</a></li>
+                <li class="menu-botton" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="30px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg></a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="container">
+        <h1>Cadastre-se</h1>
+        <form id="registration-form">
+            <div class="input-box-user">
+                <label for="full-name">Nome Completo</label>
+                <input type="text" id="full-name" name="full-name" required>
+
+                <label for="email">E-mail</label>
+                <input type="text" id="email" name="email" required>
+            </div>
+
+            <div class="column">
+                <div class="input-box-user">
+                    <label for="phone">Telefone</label>
+                    <input type="tel" id="phone" required>
+                </div>
+
+                <div class="input-box-user">
+                    <label for="dt-nascimento">Data de nascimento</label>
+                    <input type="date" id="dt-nascimento" required>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="input-box-user">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" required>
+                </div>
+
+                <div class="input-box-user">
+                    <label for="confirm-password">Confirmar senha</label>
+                    <input type="password" id="confirm-password" required>
+                </div>
+            </div>
+
+            <div class="input-box-user">
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" name="cep" placeholder="Digite o cep aqui" onblur="consultaCEP(this.value)"
+                    required>
+            </div>
+
+            <div class="column">
+                <div class="input-box-user">
+                    <label for="logradouro">Logradouro</label>
+                    <input type="text" id="logradouro" name="rua" required>
+                </div>
+
+                <div class="input-box-user">
+                    <label for="number">Número</label>
+                    <input type="number" id="number" name="number" required>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="input-box-user">
+                    <label for="complement">Complemento:</label>
+                    <input type="text" id="complement" name="complement">
+                </div>
+
+                <div class="input-box-user">
+                    <label for="bairro">Bairro:</label>
+                    <input type="text" id="bairro" name="bairro" required>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="input-box-user">
+                    <label for="city">Cidade</label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+
+                <div class="input-box-user">
+                    <label for="uf">UF</label>
+                    <input type="text" id="uf" name="uf" required>
+                </div>
+            </div>
+            <button>Cadastrar</button>
+
+            <p>Já tem uma conta?
+                <a id="link-login" href="login.html">Faça login</a>
+            </p>
+        </form>
+
+         
+        <!--   Script para Acessibilidade da pagina -->
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+            </section>
+    
+    <footer>
+        <div id="footer-content">
+            <div class="footer-section">
+                <a href="#"><i class="fa-solid fa-globe"></i></a>
+                <div>
+                    <h4>Mundo Reciclável</h4>
+                    <div id="footer-social-media">
+                        <a href="#" class="footer-link" id="facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="footer-link" id="youtube"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="footer-link" id="instagram"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-section">
+                <a href="#"><i class="fa-solid fa-map-location-dot"></i></a>
+                <div>
+                    <h4>Endereço</h4>
+                    <p>CEP: 04266-060 Rua Ipiranga, São Paulo-SP</p>
+                </div>
+            </div>
+            <div class="footer-section">
+                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                <div>
+                    <h4>E-mail</h4>
+                    <p>mundoreciclavel2024@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-section">
+                <a href="#"><i class="fa-solid fa-phone"></i></a>
+                <div>
+                    <h4>Telefone</h4>
+                    <p>(11) 4002-8922</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Firebase App (base) -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <!-- Firebase Auth -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <!-- Firebase Database -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="assets/script/auth.js"></script>
+    <script src="assets/script/script.js"></script>
+</body>
+
+</html>

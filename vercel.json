@@ -1,0 +1,23 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "assets/buscarPontos/backend/app.js",
+            "use": "@vercel/node"
+        },
+        {
+            "src": "assets/buscarPontos/frontend/**/*",
+            "use": "@vercel/static"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/api/(.*)",
+            "dest": "assets/buscarPontos/backend/app.js"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "assets/buscarPontos/frontend/$1"
+        }
+    ]
+}

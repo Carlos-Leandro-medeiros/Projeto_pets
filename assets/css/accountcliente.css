@@ -1,0 +1,357 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+/* 
+início do header */
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    
+   
+}
+
+nav {
+    background-color: #EEEEEE;
+    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.1);
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 80px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+nav a:hover {
+    cursor: pointer;
+    background-color: #f0f0f0;
+    transition-duration: 300ms;
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: white;
+    backdrop-filter: blur(10px) ;
+    box-shadow: -10px 0 10px rgb(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;  
+}
+
+.menu-botton {
+    display: none;
+}
+
+@media(max-width: 800px) {
+   .hideOnMobile{
+    display: none;
+   } 
+   .menu-botton{
+    display: block;
+   }
+}
+
+@media(max-width: 400px) {
+    .sidebar{
+        width: 100%;
+    }
+}
+
+/* fim do header */
+
+
+
+
+
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    margin-left: 30px;
+    top:20px;
+    padding: 8px;
+    
+}
+
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    align-items: center;
+    top: 30px;
+    border-radius: 55%;
+    border: 4px solid black;
+   
+   
+    
+}
+.card-image p{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.card{
+    border-radius: 25px;
+   height: 250px;
+   width: 220px;
+   margin-left: 25%;
+   margin-top: 90px;
+   background-color: white;
+   border: 3px solid black;
+}
+
+
+.card-conquistas{
+    width: 250px;
+    height: 330px;
+    background-color: white;
+    margin-left: 45%;
+    margin-top: -245px;
+    padding-top: 50px;
+    border-radius: 8px;
+    border: 3px solid black;
+}
+
+.card-conquistas h2{
+    margin-left: 30px;
+}
+
+
+
+
+.comunidade{
+    width: 250px;
+    height: 330px;
+    background-color: white;
+    margin-left: 270px;
+    margin-top: -270px;
+    padding-top: 50px;
+    border-radius: 8px;
+    border: 3px solid black;
+}
+
+.comunidade h2{
+    margin-left: 50px;
+}
+
+.comentarios{
+    width: 80%;
+    height: 60px;
+    margin-top: 40px;
+    margin-left: 20px;
+    background-color: #ACF1D3;
+    cursor: pointer;
+}
+
+.comentarios:hover{
+    background-color:#52b9ac ;
+    border: 3px solid black;
+}
+
+.comentarios p{
+    text-align: center;
+    align-items: center;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.interacoes{
+    width: 80%;
+    height: 60px;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin: 20px;
+    background-color: #ACF1D3;
+    cursor: pointer;
+}
+
+.interacoes:hover{
+    background-color:#52b9ac ;
+    border: 3px solid black;
+  
+}
+
+
+.interacoes p{
+    text-align: center;
+    align-items: center;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+#forum{
+   margin-bottom: -220px;
+   margin-left: 70px;
+   text-decoration: none;
+
+    
+}
+
+
+h1{
+    font-size: 20px;
+}
+
+#recycling-form{
+    width: 100%;
+    word-wrap: none;
+    height: 90px;
+    font-size: 20px;
+    background-color: #D9D9D9;
+    border-radius: 5px;
+    margin-top: 295px;
+}
+#category{
+    font-size: 15px;
+}
+
+.botaoAgenda{
+    width: 80%;
+    height: 60px;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin: 20px;
+    cursor: pointer;
+   color: white;
+   border-radius: 5px;
+   background-color: #024430;
+   cursor: pointer;
+}
+
+.botaoAgendaDescarte{
+    width: 80%;
+    height: 60px;
+    color: white;
+    margin-left: 20px;
+    border-radius: 5px;
+    background-color: #024430;
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 15px;
+    
+ } 
+
+ .botaoAgendaDescarte:hover{
+    background-color: #55bd9e;
+   }
+   
+
+.botaoAgenda:hover{
+ background-color: #55bd9e;
+}
+
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+/* início do footer */
+
+
+footer {
+    background-color: #f1f3f5;
+    color: black;
+    padding: 20px;
+    margin-top: 260px;
+    text-align: center;
+}
+
+#footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer-section {
+    flex-basis: calc(20% - 20px);
+    text-align: center;
+}
+
+.footer-section a {
+    color: black; 
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.footer-section div {
+    margin-top: 10px;
+}
+
+.footer-section h4 {
+    margin-bottom: 5px;
+}
+
+.footer-section p {
+    margin: 0;
+}
+
+#footer-social-media {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#footer-social-media a {
+    color: black; 
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    #footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-section {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    #footer-social-media {
+        justify-content: center;
+    }
+}
+/* 
+fim do footer *

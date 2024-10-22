@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+/* início do header */
+
+body{
+    min-height: 100vh;
+    width: 100%;
+}
+
+nav {
+    background-color: #EEEE;
+    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.1);
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 80px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+nav a:hover {
+    cursor: pointer;
+    background-color: #f0f0f0;
+    transition-duration: 300ms;
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: white;
+    backdrop-filter: blur(10px) ;
+    box-shadow: -10px 0 10px rgb(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;  
+}
+
+.menu-botton {
+    display: none;
+}
+
+@media(max-width: 800px) {
+   .hideOnMobile{
+    display: none;
+   } 
+   .menu-botton{
+    display: block;
+   }
+}
+
+@media(max-width: 400px) {
+    .sidebar{
+        width: 100%;
+    }
+}
+
+/* fim do header */
+
+
+.titulosobrenos h1{
+  margin-left: 220px;
+  margin-top: 90px;
+  font-size:40px ;
+}
+
+.titulosobrenos p{
+  margin-left: 80px;
+  font-size: 25px;
+  width: 40%;
+  margin-top:70px;
+}
+
+#sobreemp{
+    display: flex;
+    margin-left: 50%;
+    margin-top: -335px;
+}
+
+
+#missão{
+   
+   width: 100%;
+   margin-top: 60px;
+   /* margin-left: -330px; */
+}
+
+
+.missaoemp h2{
+    font-size: 40px;
+    margin-top: 10px;
+    margin-left: 90px;
+}
+
+.missaoemp p{
+    margin-top: 50px;
+    margin-left: 90px;
+    font-size: 20px;
+    width: 50%;
+}
+
+#alvo{
+    display: flex;
+    margin-left: 65%;
+    margin-top: -280px;
+    width: 340px;
+}
+
+#visao{
+ width: 100%;
+ margin-top: 80px;
+}
+
+.visaoemp h2{
+    font-size: 40px;
+    margin-left: 90px;
+    margin-top: 20px;
+}
+
+.visaoemp p{
+    margin-top: 50px;
+    margin-left: 90px;
+    font-size: 20px;
+    width: 50%;
+}
+
+#olho{
+    display: flex;
+    margin-left: 65%;
+    margin-top: -210px;
+    width: 300px;
+} 
+
+#valores{
+    width: 100%;
+    margin-top: 70px;
+}
+
+.valoresemp h2{
+    font-size: 40px;
+    margin-left: 90px;
+    margin-top: 20px;
+}
+
+.valoresemp p{
+    margin-top: 50px;
+    margin-left: 90px;
+    font-size: 20px;
+    width: 50%;
+}
+
+#mundo{
+    display: flex;
+    margin-left: 65%;
+    margin-top: -220px;
+}
+
+#valores2{
+    width: 100%;
+}
+
+
+ 
+     @media(max-width:800px){
+        .titulosobrenos h1{
+            margin-left: 50px;
+            font-size: 50px;
+         }
+         .titulosobrenos p{
+           font-size: 20px;
+           margin-left: 30px;
+           width: 80%;
+         }
+         #sobreemp{
+           display: none;
+         }
+         
+         .missaoemp h2{
+            margin-left: 60px;
+         }
+         .missaoemp p{
+            margin-left: 20px;
+            font-size: 20px;
+            width: 55%;
+         }
+         
+         #alvo{
+            margin-left: 65%;
+            width: 140px;
+            top:40px;
+            
+         }
+         .visaoemp h2{
+            margin-left: 60px;
+         }
+
+         .visaoemp p{
+            margin-left: 20px;
+            font-size: 20px;
+            width:55%;
+         }
+
+         #visao{
+            margin-top: 200px;
+         }
+
+         #valores{
+            margin-top: 200px;
+         }
+         #olho{
+
+            margin-left: 60%;
+            width: 150px;
+         }
+
+         .valoresemp h2{
+            margin-left: 60px;
+            font-size: 40px;
+         }
+
+         .valoresemp p{
+            margin-left: 30px;
+            width: 50%;
+         }
+
+         #mundo{
+            margin-left: 60%;
+            width: 180px;
+         }
+
+         #valores2{
+            margin-top: 85px;
+         }
+     } 
+/* início do footer */
+
+footer {
+    background-color: #f1f3f5;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer-section {
+    flex-basis: calc(20% - 20px);
+    text-align: center;
+}
+
+.footer-section a {
+    color: black; 
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.footer-section div {
+    margin-top: 10px;
+}
+
+.footer-section h4 {
+    margin-bottom: 5px;
+}
+
+.footer-section p {
+    margin: 0;
+}
+
+#footer-social-media {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#footer-social-media a {
+    color: black; 
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    #footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-section {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    #footer-social-media {
+        justify-content: center;
+    }
+}
+/* fim do footer */
+
+

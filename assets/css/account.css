@@ -1,0 +1,536 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+/* 
+início do header */
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    
+   
+}
+
+nav {
+    background-color: #EEEEEE;
+    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.1);
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 80px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+nav a:hover {
+    cursor: pointer;
+    background-color: #f0f0f0;
+    transition-duration: 300ms;
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: white;
+    backdrop-filter: blur(10px) ;
+    box-shadow: -10px 0 10px rgb(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;  
+}
+
+.menu-botton {
+    display: none;
+}
+
+@media(max-width: 800px) {
+   .hideOnMobile{
+    display: none;
+   } 
+   .menu-botton{
+    display: block;
+   }
+}
+
+@media(max-width: 400px) {
+    .sidebar{
+        width: 100%;
+    }
+}
+
+/* fim do header */
+
+
+
+
+
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: white;
+    margin-left: 35px;
+    top:30px;
+    padding: 3px;
+    
+}
+
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    align-items: center;
+    border-radius: 50%;
+    border: 3px solid black ;
+   
+    
+}
+
+.card-image p{
+   margin-left: 30px;
+   margin-top: 20px;
+}
+
+.card{
+   border-radius: 25px;
+   height: 250px;
+   width: 220px;
+   margin-top: 90px;
+   margin-left: 10%;
+   background-color: white;
+   border: 3px solid black;
+}
+
+.card-editar{
+    position: relative;
+    width: 220px;
+    height: 40px;
+    text-align: center;
+    align-items: center;
+    border-radius: 15px;
+    background: white;
+    margin-top: -340px;
+    margin-left: 10%;
+    padding: 3px;
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+.card-editar:hover{
+    background-color: #9ee0c5;
+}
+
+
+.card-editar h1{
+    font-size: 20px;
+    text-align: center;
+}
+
+.card-conquistas{
+    display: flex;
+    width: 470px;
+    height:620px;
+    text-align: center;
+    align-items: center;
+    border-radius: 15px;
+    background: white;
+    margin-left: 30%;
+    margin-top: -250px;
+    padding: 3px; 
+    border: 3px solid black;
+}
+
+
+.Bem-vindo{
+    display: flex;
+    width: 90%;
+    height: 60px;
+    border-radius: 3px;
+    background: #ACF1D3;
+    margin-left: 20px;
+    margin-bottom: 490px;
+    padding: 3px;
+}
+
+.Bem-vindo p{
+    font-size: 20px;
+    width: 100%;
+    margin-top:-340px;
+}
+
+.Bem-vindo a{
+    margin-top: 650px;
+}
+
+.quantidadeColetada{
+    display: inline;
+    width: 100%;
+    height: 130px;
+    margin-top: 80px;
+    background-color: #D9D9D9;
+}
+
+.quantidadeColetada h2{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+#grafico{
+ margin-top: 20px;
+ margin-left: -230px;
+}
+
+.medalhas{
+    background-color: #D9D9D9;
+    width: 100%;
+    margin-top: -130px;
+    border-radius: 8px;
+    height: 120px;
+}
+
+.medalhas h2{
+    display: flex;
+    margin-left: 30px;
+}
+#medalhaperfil2{
+    display: inline;
+    margin-right: 220px;
+    width: 60px;
+}
+#medalhaperfil{
+    display: inline;
+    width: 60px;
+}
+
+.comunidade{
+    width: 250px;
+    height: 330px;
+    background-color: white;
+    margin-left: 70%;
+    margin-top: -620px;
+    padding-top: 50px;
+    border-radius: 8px;
+    border: 3px solid black;
+}
+
+.comunidade h2{
+    margin-left: 50px;
+}
+
+.comentarios{
+    width: 80%;
+    height: 60px;
+    margin-top: 40px;
+    margin-left: 20px;
+    background-color: #ACF1D3;
+    cursor: pointer;
+}
+
+.comentarios:hover{
+    background-color:#52b9ac ;
+    border: 3px solid black;
+}
+
+.comentarios p{
+    text-align: center;
+    align-items: center;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.interacoes{
+    width: 80%;
+    height: 60px;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin: 20px;
+    background-color: #ACF1D3;
+    cursor: pointer;
+}
+
+.interacoes:hover{
+    background-color:#52b9ac ;
+    border: 3px solid black;
+}
+
+
+.interacoes p{
+    text-align: center;
+    align-items: center;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+#forum{
+   margin-bottom: -220px;
+   margin-left: 70px;
+   text-decoration: none;
+
+    
+}
+.minhasTrocas {
+    width: 250px;
+    height: 235px;
+    margin-left: 70%;
+    padding-top: 2px;
+    margin-top: 10px;
+    border-radius: 4px;
+    background-color: white;
+    border: 3px solid black;
+}
+.moedas{
+    width: 170px;
+    height: 120px;
+    margin-top:20px;
+    margin-left: 40px;
+    background-color: #D9D9D9;
+}
+
+
+
+.moedas p{
+    font-size: 20px;
+    margin-left: 10px;
+    
+}
+
+#moedassite{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.trocas{
+    width: 170px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 40px;
+    text-align: center;
+    padding-top: 10px;
+    background-color: #D9D9D9;
+    cursor: pointer;
+}
+
+.trocas:hover{
+    background-color:#52b9ac ;
+    border: 3px solid black;
+}
+
+a {
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+   
+}
+
+h1{
+    font-size: 15px;
+}
+
+#recycling-form{
+    width: 100%;
+    height: 130px;
+    font-size: 15px;
+    background-color: #D9D9D9;
+    border-radius: 5px;
+    margin-top: 330px;
+}
+
+select{
+    width: 50%;
+    margin-left: 160px;
+}
+input{
+    width: 60%;
+}
+
+.Categoria{
+    margin-left: -140px;
+}
+
+.Quantidade{
+    margin-left: -80px;
+}
+
+#quantity{
+    margin-left: 100px;
+    
+}
+.category{
+    margin-left: 30%;
+}
+.quantity{
+   margin-left: 10%;
+}
+
+#botaoSalvar{
+    width: 40%;
+    margin-top: 10px;
+    background-color: #024430;
+    color: white;
+    border-radius: 5px;
+}
+
+#botaoSalvar:hover{
+    background-color: #52b9ac;
+}
+
+.botaoAgenda{
+   margin-top: 80px;
+   width: 100%;
+   height: 60px;
+   font-size: 20px;
+   color: white;
+   border-radius: 5px;
+   background-color: #024430;
+   cursor: pointer;
+}
+
+.botaoAgenda:hover{
+ background-color: #55bd9e;
+ 
+}
+
+
+
+.janela-modal{
+    position: relative;
+    top:-440px;
+    left: -430px;
+    height: 100vh;
+    width: 100vw;
+    display: none;
+    background-color: rgba(0, 0,0, 0.3);
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+
+    
+  .modal{
+    background-color:  #09aa64;
+    padding: 30px 50px;
+    width: 60%;
+    border-radius: 5px;
+    min-width: 450px;
+    min-height: 200px;
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+.janela-modal.abrir{
+    display: flex;
+}
+
+
+
+
+/* início do footer */
+
+
+footer {
+    background-color: #f1f3f5;
+    color: black;
+    padding: 20px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+#footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer-section {
+    flex-basis: calc(20% - 20px);
+    text-align: center;
+}
+
+.footer-section a {
+    color: black; 
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.footer-section div {
+    margin-top: 10px;
+}
+
+.footer-section h4 {
+    margin-bottom: 5px;
+}
+
+.footer-section p {
+    margin: 0;
+}
+
+#footer-social-media {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#footer-social-media a {
+    color: black; 
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    #footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-section {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    #footer-social-media {
+        justify-content: center;
+    }
+}
+/* 
+fim do footer *

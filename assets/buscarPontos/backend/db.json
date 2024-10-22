@@ -1,0 +1,137 @@
+{
+    "users": [
+        {
+            "id": "e729",
+            "username": "ana",
+            "password": "12345"
+        },
+        {
+            "id": "af1d",
+            "username": "jenifer",
+            "password": "54321"
+        },
+        {
+            "id": "V8Gma2oMWZSLZxa9LOsMO3qIcUB2",
+            "email": "vania@vania.com",
+            "fullName": "vania",
+            "password": "7654321",
+            "phone": "40028922",
+            "dtNascimento": "1982-03-24",
+            "address": {
+                "cep": "05264030",
+                "logradouro": "Rua Rafael Armenise",
+                "bairro": "Vila Sulina",
+                "cidade": "São Paulo",
+                "uf": "SP",
+                "numero": "63",
+                "complemento": ""
+            }
+        },
+        {
+            "id": "3Jf1h6D23eVLdd1z3uiHPZGgri62",
+            "email": "tania@tania.com",
+            "fullName": "Tania",
+            "password": "40028922",
+            "phone": "156156156",
+            "dtNascimento": "1983-06-24",
+            "address": {
+                "cep": "05264-030",
+                "logradouro": "Rua Rafael Armenise",
+                "bairro": "Vila Sulina",
+                "cidade": "São Paulo",
+                "uf": "SP",
+                "numero": "53",
+                "complemento": ""
+            }
+        }
+    ],
+    "recyclingData": [
+        {
+            "id": "e1f5",
+            "userId": "e729",
+            "category": "papel",
+            "quantity": 10
+        },
+        {
+            "id": "6d6c",
+            "userId": "e729",
+            "category": "vidro",
+            "quantity": 5
+        },
+        {
+            "id": "5acd",
+            "userId": "e729",
+            "category": "plastico",
+            "quantity": 4
+        },
+        {
+            "id": "b328",
+            "userId": "V8Gma2oMWZSLZxa9LOsMO3qIcUB2",
+            "category": "metal",
+            "quantity": 15
+        },
+        {
+            "id": "a56c",
+            "userId": "V8Gma2oMWZSLZxa9LOsMO3qIcUB2",
+            "category": "vidro",
+            "quantity": 10
+        },
+        {
+            "id": "4589",
+            "userId": "V8Gma2oMWZSLZxa9LOsMO3qIcUB2",
+            "category": "plastico",
+            "quantity": 1
+        }
+    ],
+    "points": [
+        {
+            "id": "1",
+            "name": "Exemplo de Ponto",
+            "latitude": -23.55052,
+            "longitude": -46.633308
+        }
+    ],
+    "posts": [
+        {
+            "id": "d2d6",
+            "content": "Exemplo de conteúdo da postagem",
+            "userId": "e729",
+            "authorName": "ana",
+            "likes": 0,
+            "comments": [
+                {
+                    "id": "comment1",
+                    "postId": "d2d6",
+                    "userId": "af1d",
+                    "authorName": "jenifer",
+                    "content": "Comentário de exemplo 1"
+                },
+                {
+                    "id": "comment2",
+                    "postId": "d2d6",
+                    "userId": "V8Gma2oMWZSLZxa9LOsMO3qIcUB2",
+                    "authorName": "vania",
+                    "content": "Comentário de exemplo 2"
+                }
+            ],
+            "likedBy": [],
+            "commentedBy": []
+        }
+    ],
+    "comments": [
+        {
+            "id": "comment1",
+            "postId": "d2d6",
+            "userId": "af1d",
+            "authorName": "jenifer",
+            "content": "Comentário de exemplo 1"
+        },
+        {
+            "id": "comment2",
+            "postId": "d2d6",
+            "userId": "V8Gma2oMWZSLZxa9LOsMO3qIcUB2",
+            "authorName": "vania",
+            "content": "Comentário de exemplo 2"
+        }
+    ]
+}

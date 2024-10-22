@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+/* início do header */
+
+body{
+    min-height: 100vh;
+    width: 100%;
+}
+
+nav {
+    background-color: #EEEEEE;
+    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.1);
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 80px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+nav a:hover {
+    cursor: pointer;
+    background-color: #f0f0f0;
+    transition-duration: 300ms;
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: white;
+    backdrop-filter: blur(10px) ;
+    box-shadow: -10px 0 10px rgb(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;  
+}
+
+.menu-botton {
+    display: none;
+}
+
+@media(max-width: 800px) {
+   .hideOnMobile{
+    display: none;
+   } 
+   .menu-botton{
+    display: block;
+   }
+}
+
+@media(max-width: 400px) {
+    .sidebar{
+        width: 100%;
+    }
+}
+
+
+.nav-item.active a{
+    color: black;
+    border-bottom: 3px solid green;
+}
+
+.btn-default{
+    width: 75px;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    margin-right: 70px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-default:hover{
+    background-color: rgb(90, 86, 86);
+}
+
+#mobile_btn{
+    display: none;
+}
+
+#mobile_menu{
+    display: none;
+    
+} 
+/* fim do header */
+
+.aprenderReciclagem h1{
+    margin-left: 380px;
+    margin-top: 70px;
+   word-spacing: 10px;
+    font-size: 30px;
+    width: 45%;
+}
+
+
+ .aprenderReciclagem p{
+    display: flex;
+    margin-left: 120px;
+    margin-top: 60px;
+    width: 65%;
+    font-size: 20px;
+}
+
+#imgaprender{
+  display: flex;
+  position: absolute;
+  margin-top: -330px;
+  margin-left:1100px;
+ 
+} 
+
+.tiposLixo{
+    margin-left: 540px;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.lixeira{
+    display: inline;
+    margin-left:180px;
+    margin-top: 30px;
+    width: 200px;
+}
+
+.lixeiraReciclavel{
+    margin: 290px;
+}
+
+.limpeza h3{
+   align-items: center;
+   margin-left: 135px;
+   font-size: 25px;
+}
+
+.limpeza p{
+    font-size: 20px;
+    width: 60%;
+    margin-left: 135px;
+    margin-top: 25px;
+}
+
+.separacao{
+    display: flex;
+}
+
+.separacao h3{
+   margin-left: 135px;
+   font-size: 25px;
+   margin-top: 30px;
+}
+
+.separacao p{
+    font-size: 20px;
+    width: 57%;
+    margin-left: -130px;
+    margin-top: 90px;
+}
+
+#separacaoimg{
+    width: 300px;
+    margin-left: 30px;
+    margin-bottom: 70px;
+}
+
+.reaproveitamento h3{
+    align-items: center;
+    margin-left: 135px;
+    font-size: 25px;
+    margin-top: -80px;
+}
+
+.reaproveitamento p{
+    font-size: 20px;
+    width: 75%;
+    margin-left: 135px;
+    margin-top: 20px;
+}
+
+.botao{
+    width: 290px;
+    margin-left: 125px;
+    border-radius: 8px;
+    background-color: #024430;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.tempoDecomposicao h3{
+  margin-left: 290px;
+  margin-top: 35px;
+  font-size: 30px;
+}
+.tempoDecomposicao p{
+    font-size: 20px;
+    margin-top: 25px;
+    margin-left: 130px;
+    width: 80%;
+}
+
+#tabelaImagens{
+    align-items: center;
+    margin-top: 30px;
+    width: 80%;
+    margin-left: 130px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+@media(max-width: 800px) {
+    .hideOnMobile{
+     display: none;
+    } 
+    .menu-botton{
+     display: block;
+    }
+ }
+/* Responsividade do texto e imagens */
+    
+  @media(max-width:800px){
+     .aprenderReciclagem h1{
+         margin-left: 45px;
+         font-size: 25px;
+         width: 460px;
+ 
+     }
+    .aprenderReciclagem p{
+        margin-left: 35px;
+        width: 50%;
+        margin-top: 30px;
+        font-size: 20px;
+    }
+    
+    #imgaprender{
+        margin-left: 280px;
+        margin-top: -80px;
+    }
+
+    .tiposLixo {
+       margin-left: 180px;
+       margin-top: 50px;
+       font-size: 20px;
+    }
+
+    .lixeira{
+        margin-left: 1px;
+    }
+
+    .limpeza h3{
+        margin-left: 10px;
+       
+    }
+    .limpeza p{
+        margin-left: 10px;
+        width: 75%;
+        font-size: 25px;
+    }
+    .separacao h3{
+        margin-left:10px ;
+    }
+    .separacao p{
+    
+        width: 9
+        30%;
+        font-size: 25px;
+    }
+    
+    #separacaoimg{
+        margin-left: -35px;
+        margin-top: 195px;
+        width: 190px;
+    }
+
+    .reaproveitamento h3{
+        margin-left: 10px;
+        margin-top: 30px;
+        width: 80%;
+    }
+
+    .reaproveitamento p{
+        margin-left: 20px;
+        width: 80%;
+        font-size: 25px;
+    }
+
+    .tempoDecomposicao h3{
+        margin-left: 10px;
+       
+    }
+    .tempoDecomposicao p{
+        margin-left: 15px;
+        width: 85%;
+    }
+
+    #tabelaImagens{
+        margin-left: 10px;
+        
+    }
+    
+    .botao{
+        margin-top: 20px;
+        margin-left: 20px;
+        /* margin: 50px;
+        justify-content: center; */
+      
+       
+     }
+
+
+ } 
+
+
+/* @media(max-width: 1680px){
+      .aprenderReciclagem h1{
+       margin-right: 9%;
+      }
+ 
+    .aprenderReciclagem p{
+        font-size: 20px;
+        margin-left: 470px;
+        width: 680px;
+    }
+
+    .tiposLixo{
+        margin-left: 750px;
+    }
+
+    .lixeira{
+      height: 150px;
+      margin-right: 65px;
+    }
+
+    .limpeza h3{
+        margin-left: 530px;
+    }
+
+    .limpeza p{
+        margin-left: 530px;
+        width: 850px;
+    }
+
+    .separacao h3{
+        margin-left: 530px;
+    }
+    .reaproveitamento h3{
+         margin-left: 525px;
+    }
+
+    .reaproveitamento p{
+        margin-left: 530px;
+        width: 850px;
+    }
+
+    .botao{
+        margin-left: 540px;
+    }
+
+    .tempoDecomposicao h3{
+        margin-left: 530px;
+    }
+    .tempoDecomposicao p{
+        margin-left: 535px;
+    }
+
+    #tabelaImagens{
+        width: 850px;
+        margin-left: 530px;
+    } */
+
+/* 
+    .lixeira{
+        width: 140px;
+        margin-left: 240px;
+        margin: -20px;
+
+    }
+   
+    
+    #lixeiraComum{
+       margin-left: 80px;
+       margin: 30px;
+    }
+
+    #lixeiraOrganico{
+        margin-left: 370px;
+    } */
+
+
+      /* body{
+        background-color: red;
+      }
+
+} */
+
+
+
+
+
+
+
+
+
+ /* início do footer */
+
+footer {
+    background-color: #f1f3f5;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer-section {
+    flex-basis: calc(20% - 20px);
+    text-align: center;
+}
+
+.footer-section a {
+    color: black; 
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.footer-section div {
+    margin-top: 10px;
+}
+
+.footer-section h4 {
+    margin-bottom: 5px;
+}
+
+.footer-section p {
+    margin: 0;
+}
+
+#footer-social-media {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#footer-social-media a {
+    color: black; 
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    #footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-section {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    #footer-social-media {
+        justify-content: center;
+    }
+}
+/* fim do footer */
+
+

@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+/* 
+início do header */
+
+body {
+    min-height: 100vh;
+    width: 100%; 
+    background-color: #eeee; 
+}
+
+nav {
+    background-color: #eeee;
+    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.1);
+    font-family: Inter, sans-serif;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 80px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+nav a:hover {
+    cursor: pointer;
+    background-color: #f0f0f0;
+    transition-duration: 300ms;
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: white;
+    backdrop-filter: blur(10px) ;
+    box-shadow: -10px 0 10px rgb(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;  
+}
+
+.menu-botton {
+    display: none;
+}
+
+@media(max-width: 800px) {
+   .hideOnMobile{
+    display: none;
+   } 
+   .menu-botton{
+    display: block;
+   }
+}
+
+@media(max-width: 400px) {
+    .sidebar{
+        width: 100%;
+    }
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+#container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 10px;
+    overflow: hidden; /* Para que o conteúdo respeite as bordas arredondadas */
+    background-color: white;
+    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #ffffff;
+}
+
+#left {
+    flex: 1;
+    margin-right: 20px;
+    padding: 20px;
+    border-radius: 10px 0 0 10px;
+    background-color: #ffffff;
+}
+
+#right {
+    flex: 1;
+    padding: 20px;
+    border-radius: 0 10px 10px 0;
+    background-color: #ffffff;
+}
+
+#impact-form {
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+}
+
+#impact-form input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-right: none; /* Remove a borda direita */
+    border-radius: 10px 0 0 10px;
+}
+
+#impact-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+}
+
+#impact-form button:hover {
+    background-color: #45a049;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+#results {
+    width: 100%;
+}
+
+#results div {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+
+footer {
+    background-color: #f1f3f5;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+#footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer-section {
+    flex-basis: calc(20% - 20px);
+    text-align: center;
+}
+
+.footer-section a {
+    color: black; 
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.footer-section div {
+    margin-top: 10px;
+}
+
+.footer-section h4 {
+    margin-bottom: 5px;
+}
+
+.footer-section p {
+    margin: 0;
+}
+
+#footer-social-media {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#footer-social-media a {
+    color: black; 
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    #footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-section {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    #footer-social-media {
+        justify-content: center;
+    }
+}
+

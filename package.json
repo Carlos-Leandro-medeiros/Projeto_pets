@@ -1,0 +1,23 @@
+{
+  "name": "Projeto-final-mundo-reciclavel",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run json-server\"",
+    "server": "node assets/buscarPontos/backend/app.js",
+    "json-server": "json-server --watch assets/buscarPontos/backend/db.json --port 3002",
+    "vercel-build": "cd assets/buscarPontos/frontend && cp -r ../../index.html . && cp -r ../../css . && cp -r ../../forum . && cp -r ../../image . && cp -r ../../script . && cp -r ../../cartilha . && cp -r ../../Data ."
+  },
+  "dependencies": {
+    "concurrently": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.6.0",
+    "express": "^4.17.1",
+    "geolib": "^3.3.4",
+    "node-fetch": "^2.6.1",
+    "json-server": "^1.0.0-beta.1"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0"
+  }
+}
