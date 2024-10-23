@@ -60,9 +60,3 @@ $ git clone https://github.com/2024-1S-SENAI-SP-FE/Projeto-final-mundo-reciclave
 
 [CarlosLeandro](https://github.com/Carlos-Leandro-medeiros)
 
-
-[JeniferScarlate](https://github.com/jeniferscarlate)
-
-[JuarezLima](https://github.com/juarezLSantos)
-
-[JulianaAlves](https://github.com/JulianaAMatos)
