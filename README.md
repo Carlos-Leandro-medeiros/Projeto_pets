@@ -34,55 +34,6 @@ Um site que ajuda realizar o descarte de lixo da maneira correta, conectando pon
 
  - [x] Fórum para Compartilhamento de Dicas.
 
- ## Layout do Projeto 📸
-
-- Home do Projeto:
-
-<img src="assets/image/">
-
-
-- Tela de Cadastro do Catador e Usuários:
-
-<img src="assets/image/Cadastrousuario.jpeg">
-
-<img src="assets/image/Cadastrousuario.jpeg">
-
-- Tela de Login:
-
-<img src="assets/image/Login.jpeg">
-
-- Tela de Perfil do Usuário:
-
-<img src="assets/image/Perfilusuario.jpeg">
-
-- Tela de Perfil do Catador:
-
-<img src="assets/image/PerfilCatador.jpeg">
-
-- Tela da Busca pelos Pontos de Coleta e Catadores próximos:
-
-<img src="assets/image/">
-
-- Tela de Agendamento de Coleta:
-
-<img src="assets/image/Agendamento.jpeg">
-
-- Fórum para Compartilhamento de Dicas e Interações entre a comunidade da plataforma:
-
-<img src="assets/image/Forum.jpeg">
-
-
-- Tela da página de Educação com dicas sobre a separação do lixo:
-
-
-<img src="assets/image/PagEducacao.jpeg">
-
-
-- Tela da página Sobre nós:
-
-
-<img src="assets/image/Sobrenos.jpeg">
-
 ## Como rodar este projeto? 💿
 
 [Veja o resultado clicando aqui.]()
